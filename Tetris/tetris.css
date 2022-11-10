@@ -1,0 +1,160 @@
+body {
+    background: black;
+    font-family: poppins;
+}
+
+table {
+    height: 90vh;
+    border: 2px solid white;
+    border-collapse: collapse;
+    user-select: none;
+    margin-left: 500px;
+    margin-top: 8vh;
+}
+
+td {
+    border: 1px solid white;
+    height: 10px;
+    width: 28px;
+}
+
+#square {background: yellow;}
+#z {background: red;}
+#l {background: blue;}
+#t {background: green;}
+#long {background: rgb(201, 17, 185);}
+
+:root {
+    --hiderColor: rgb(255, 72, 0);
+}
+
+.taken {
+    border: 1px solid var(--hiderColor);
+    background-color: var(--hiderColor);
+}
+.roof {
+    border: 1px solid var(--hiderColor);
+    border-bottom-color: var(--hiderColor);
+    background-color: var(--hiderColor);
+    border-bottom-color: white;
+}
+
+.pre-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 821px;
+}
+
+.next {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: var(--hiderColor);
+    border: 1px solid white;
+}
+
+.previewer {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--hiderColor);
+    border-left: none;
+}
+
+.preview-row {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.preview-row>div {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+}
+
+.stats {
+    position: absolute;
+    top: 140px;
+    left: 438px;
+    background-color: red;
+    /* height: 120px; */
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    user-select: none;
+}
+
+.score-board, .lines-board {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--hiderColor);
+    border: 1px solid white;
+}
+
+.score, .lines {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+}
+
+.game-over {
+    position: absolute;
+    z-index: 4;
+    height: 250px;
+    width: 350px;
+    background: white;
+    top: 170px;
+    left: 500px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: 1px solid var(--hiderColor);
+    user-select: none;
+
+}
+
+.retry {
+    background: var(--hiderColor);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.retry:hover{
+    border: 1px solid var(--hiderColor);
+    background-color: white;
+    color: var(--hiderColor);
+}
+
+.start-pause {
+    color: var(--hiderColor);
+    background-color: white;
+    border: 1px solid var(--hiderColor);
+    height: 30px;
+    width: 70px;
+    position: absolute;
+    top: 101px;
+    left: 437px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
